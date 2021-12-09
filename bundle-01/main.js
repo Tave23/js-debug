@@ -15,14 +15,22 @@ for (let i = 0; i > 5; i++) {
     console.log(i);
 }
 
+// un ciclo for per 6 volte
+// nessun errore di sintassi
+// nessun errore logico
+
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    if (num & 2) {
         return num + 5;
     }
     return num;
 }
+
+// è una funzione che analizza "num" e qualora fosse pari, aggiunge 5 a "num"
+// si, non bisogna aggiugnere = 0 perché il simbolo % verifica se è divisibile per X con resto 0, non il risultato = 0
+// più o meno, era errato il significato di %. Avrebbe dovuto usare "/" per effettuare una divisione
 
 
 // ESERCIZIO 3
