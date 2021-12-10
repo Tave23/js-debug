@@ -11,12 +11,12 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
 // un ciclo for per 6 volte
-// nessun errore di sintassi
+// non può essere > di 5 
 // nessun errore logico
 
 
