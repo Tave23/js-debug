@@ -15,7 +15,7 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
-// un ciclo for per 6 volte
+// un ciclo for per 4 volte
 // non può essere > di 5 
 // nessun errore logico
 
