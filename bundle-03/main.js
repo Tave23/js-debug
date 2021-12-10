@@ -15,12 +15,12 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Fiesta',
-        type: 'diesel'
+        type: 'Diesel'
     },
     {
         manufacturer: 'Audi',
         model: 'A1',
-        type: 'benzina'
+        type: 'Benzina'
     },
     {
         manufacturer: 'Volkswagen',
@@ -30,7 +30,7 @@ const cars = [
     {
         manufacturer: 'Fiat',
         model: 'Panda',
-        type: 'metano'
+        type: 'Metano'
     },
     {
         manufacturer: 'Fiat',
@@ -40,12 +40,12 @@ const cars = [
     {
         manufacturer: 'Tesla',
         model: 'Model 3',
-        type: 'elettrico'
+        type: 'Elettrico'
     },
     {
         manufacturer: 'Volkswagen',
         model: 'Polo',
-        type: 'benzina'
+        type: 'Benzina'
     },
     {
         manufacturer: 'Ford',
@@ -55,23 +55,25 @@ const cars = [
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
-        type: 'metano'
-    }
+        type: 'Metano'
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
         type: 'Benzina'
     },
 ];
-
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+    
+const gasolineCars = cars.filter( (auto) => {
+    return auto.type === 'Benzina';
+});
 
 const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+    return auto.type === 'Diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type !== 'Benzina' && auto.type !== 'Diesel';
 });
 
 console.log('Auto a benzina');
@@ -84,3 +86,8 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+
+// è un codice che divide le auto per alimentazione
+// 
+// virgola mancante a linea 59, = e > invertite nel primo const, || significa or non and (&&), mancanza di due return nelle prime 2 const, qualche maiuscola o minuscola "scordinata" nelle alimentazioni delle auto, sia nell'array che nelle const, mancanza di ; nel primo const
